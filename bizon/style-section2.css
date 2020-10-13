@@ -1,0 +1,154 @@
+@media screen and (max-width: 700px){
+	.bizon-main{
+		height: 4000px;
+	}
+	.bizon-main-conteiner{
+		width: 700px;
+		height: 4000px;
+		display: flex;
+		flex-wrap: wrap;
+	    justify-content: center;
+	}
+    .bizon-container-zoom{
+    	width: 600px;
+    	height: 900px;
+    	flex-wrap: wrap;
+	}
+    .bizon-img:hover{
+       transform: scale(0.8);
+    }
+}
+@media screen and (max-width: 700px){
+	.bizon-container-square{
+		height: 290px;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.bizon-container-square-div{
+		width: 270px;
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 700px){
+	.bizon-container3{
+		justify-content: center;
+	}
+    .bizon-container3-block{
+    	width: 360px;
+    	margin-bottom: 30px;
+    }
+    .img-background{
+    	width: 380px;
+	   opacity: 0.3;	
+    }
+    .display{
+	  display: inline;
+    }
+}
+.bizon-main{
+	width: 100%;
+	height: 1950px;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bizon-main-conteiner{
+	width: 1100px;
+	height: 1850px; 
+}
+.bizon-container-zoom{
+	height: 600px; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.bizon-container-zoom-text{
+  font-size: 1.1em;
+}
+.bizon-container-zoom-text-h2{
+	font-size: 1.8em; 
+}
+.color-text-white{
+	color: #fff;
+}
+.bizon-padding{
+	padding: 40px 0;
+}
+.bizon-container-zoom-text-div-a{
+	color: #FFBB00;
+	text-decoration: none;
+}
+.bizon-img{
+	width: 600px;
+	transition-duration: 1s;
+}
+.bizon-img:hover{
+  transform: scale(0.9);
+}
+/*сексия 2	bizon-container-square*/
+.bizon-container-square{
+	height: 160px;
+  display: flex;
+	justify-content: space-between;
+	align-items: flex-start; 
+}
+.bizon-container-square-div{
+	width: 250px;
+	height: 85px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+}
+.bizon-square{
+	width: 100px;
+	height: 80px;
+	border: 5px solid #FFBB00;
+	font-size: 1.4em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bizon-square-text{
+	font-size: 1.6em;
+}
+.bizon-container-square-text{
+	width: 120px;
+}
+
+/* секция 3*/
+.bizon-container3{ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.bizon-container3-block{
+	width: 330px;
+	height: 400px;
+	margin-bottom: 80px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; 
+  transition-duration: 2s;
+}
+.img-background{
+	width: 330px;
+	height: 400px;
+	position: absolute;
+	opacity: 0;
+	transition-property:all;
+  transition-duration: 1.5s; 
+}
+.bizon-container3-block:hover .img-background{
+	transform: scale(1.15);
+	opacity: 0.3;	
+}
+.display{
+	display: none;
+	transition-duration: 2s; 
+}
+.bizon-container3-block:hover .display{
+	display: inline; 
+} 
+

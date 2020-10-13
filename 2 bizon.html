@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<!-- Сайт сделан как дипломный проэкт по CSS 
+пользоватсья SCSS, SASS и JS - было нельзя
+Сложный слайдер с анимацией тоже сделан на чистом CSS-->
+
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bizon-Tech</title>
+  <!-- Сайт делался в команде с другими начинающими програмистами на курсах, 
+  но приличной оказалась только часть програмистки Оли про бизона(388 - 494 HTML). 
+  остальное сделанно мной с нуля-->
+  
+  <!-- Общая секция НИКОМУ НЕ ТРОГАТЬ. при желании можно убрать ТОЛЬКО box-shadow 
+  из класса контейнера - тень сделанна для того чтоб отличать где контейнер,
+  потому что у него нет цвета -->
+  <link rel="stylesheet" href="./bizon/style-main.css">
+  <link rel="stylesheet" href="./bizon/style-header.css">
+  <link rel="stylesheet" href="./bizon/style-section1.css">
+  <!-- Секция Оли -->
+  <link rel="stylesheet" href="./bizon/style-section2.css">
+  <link rel="stylesheet" href="./bizon/style-section3.css">
+  <style>
+
+
+  </style>
+
+<body>
+  <div class="menu-header-conteiner">
+    <div class="flex-center menu-header">
+      <div class="menu-logo">
+        <div>
+          <img src="./bizon/header_img/logo-bizontech.svg" alt="bizon logo" width="auto" height="45px">
+        </div>
+
+      </div>
+
+      <div class="menu-content flex-center">
+        <div>Магазин</div>
+        <div> Дистриб'юція </div>
+        <div> Сільгосптехніка </div>
+        <div> Послуги </div>
+        <div> Про компанію </div>
+        <div> Акції </div>
+        <div> Блог </div>
+        <div> Контакти </div>
+      </div>
+      <div class="menu-controlz flex-center">
+        <div class="search">
+          <img src="./bizon/header_img/search.png" alt="search" width="24px" height="22px">
+        </div>
+        <div class="break">
+          <img src="./bizon/header_img/break.png" alt="break" width="24px" height="22px">
+        </div>
+        <div class="lang">
+          UK
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <header class="black-conteiner">
+
+    <div class="conteiner font-white flex-center header">
+      <input type="radio" checked name="slider" id="slider1">
+      <input type="radio" name="slider" id="slider2">
+      <input type="radio" name="slider" id="slider3">
+      <input type="radio" name="slider" id="slider4">
+      <input type="radio" name="slider" id="slider5">
+      <input type="radio" name="slider" id="slider6">
+      <input type="radio" name="slider" id="slider7">
+      <input type="radio" name="slider" id="slider8">
+      <div class="slider-wrap">
+        <div class="slider">
+          <div class="slider-img slider-img1">
+            <img src="https://bizontech.ua/img/builder/i0wChKpA9U.jpeg?crop=1920%2C960%2C0%2C60&w=2200"
+              alt="Акция Ваучер" width="100%" height="auto">
+          </div>
+          <div class="slider-img slider-img2">
+            <img src="https://bizontech.ua/img/builder/iUPc7sMRVa.jpeg?crop=1920%2C960%2C0%2C0&w=2200"
+              alt="Акция Ваучер" width="100%" height="auto">
+          </div>
+          <div class="slider-img slider-img3">
+            <img src="https://bizontech.ua/img/builder/lEWpQSBXNe.jpeg?crop=1920%2C1080%2C0%2C0&w=2200"
+              alt="Акция Ваучер" width="100%" height="auto">
+          </div>
+          <div class="slider-img slider-img4">
+            <img src="https://bizontech.ua/img/builder/Fu4U1HmQZl.jpeg?crop=1920%2C960%2C0%2C0&w=2200"
+              alt="Акция Ваучер" width="100%" height="auto">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="slider-items flex-center">
+        <label for="slider1" class=" item1">
+          <div class="slider-nav ">
+            <div class="slider-line animation1"></div>
+            01
+          </div>
+        </label>
+        <label for="slider2" class=" item2">
+          <div class="slider-nav ">
+            <div class="slider-line animation2"></div>
+            02
+          </div>
+        </label>
+        <label for="slider3" class="item3">
+          <div class="slider-nav ">
+            <div class="slider-line animation3"></div>
+            03
+          </div>
+        </label>
+        <label for="slider4" class="item4">
+          <div class="slider-nav ">
+            <div class="slider-line animation4"></div>
+            04
+          </div>
+        </label>
+        <label for="slider5" class="cast-item item5">
+          <div class="slider-nav">
+            <div class="slider-line"></div>
+            01
+          </div>
+        </label>
+        <label for="slider6" class="cast-item item6">
+          <div class="slider-nav">
+            <div class="slider-line"></div>
+            02
+          </div>
+        </label>
+        <label for="slider7" class="cast-item item7">
+          <div class="slider-nav">
+            <div class="slider-line"></div>
+            03
+          </div>
+        </label>
+        <label for="slider8" class="cast-item item8">
+          <div class="slider-nav">
+            <div class="slider-line"></div>
+            04
+          </div>
+
+
+      </div>
+
+      <div class="offer">
+        <div class="wrap-slider-offer">
+          <div class="offer-slaid offer-slaid1 flex-center">
+            Отримуй бонусні мішки у подарунок
+            <div class="details flex-center">
+              <pre>Детальнише   ></pre>
+            </div>
+          </div>
+          <div class="offer-slaid offer-slaid2 flex-center">
+            Отримай передпосівну обробку в подарунок
+            <div class="details flex-center flex-center">
+              <pre>Детальнише   ></pre>
+            </div>
+          </div>
+          <div class="offer-slaid offer-slaid3 flex-center">
+            Спеціальна пропозіція - надійний та доступний
+            <div class="details flex-center">
+              <pre>Детальнише   ></pre>
+            </div>
+          </div>
+          <div class="offer-slaid offer-slaid4 flex-center">
+            Не гальмуй — авалюй!
+            <div class="details flex-center">
+              <pre>Детальнише   ></pre>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="white-conteiner black-font">
+    <div class="conteiner flex-center products">
+      <div class="wrap-product-heading flex-center">
+        <div class="product-heading">
+
+          <h2>
+            Інтернет-магазин <br> Бізон-Тех
+          </h2>
+          <div>
+            Продаж сертифікованого насіння, добрив та ЗЗР від світових
+            брендів
+          </div>
+
+        </div>
+        <div class="product-item">
+          <p>
+            Компанія Бізон-Тех з 2006 року успішно забезпечує сільгоспвиробників продукцією
+            найвищої якості. Широкий асортимент товару дозволяє задовольнити будь-які
+            вимоги виробника сільськогосподарськоі продукції нежалежно від масштабів
+            господарства.
+          </p>
+
+          <p>
+            Для отримання максимального врожаю необхідно використовувати
+            виключно сертифіковані продукти. Наша мета - максимально забеспечити
+            доступність таких продуктів українським виробникам.
+          </p>
+        </div>
+      </div>
+      <div class="wrap-product-heading flex-center">
+        <div class="product">
+          <img src="./bizon/header_img/I9SdMEyUIM.svg" alt="lorem">
+          <h2>
+            Каталог насiння
+          </h2>
+          <h5>
+            1000
+          </h5>
+          <div>
+            Наименувань
+          </div>
+          <p>
+            <a href="#" title="Lorem">Lorem</a>
+            <a href="#" title="ipsum"> ipsum</a>
+            <a href="#" title="sit"> sit</a>
+            <a href="#" title="dolor">dolor</a>
+            amet consectetur, adipisicing elit. Sed illum
+            <a href="#" title="voluptate">voluptate</a>.
+            Lorem, ipsum dolor.
+          </p>
+
+
+        </div>
+
+        <div class="product">
+          <img src="./bizon/header_img/wvToDxSVDD.svg" alt="lorem">
+          <h2>
+            Каталог ЗЗР
+          </h2>
+          <h5>
+            500
+          </h5>
+          <div>
+            Наименувань
+          </div>
+          <p>
+            <a href="#" title="Lorem">Lorem</a>
+            <a href="#" title="ipsum"> ipsum</a>
+            <a href="#" title="sit"> sit</a>
+            <a href="#" title="dolor">dolor</a>
+            amet consectetur, adipisicing elit. Sed illum
+            <a href="#" title="voluptate">voluptate</a>.
+            Lorem, ipsum dolor.
+          </p>
+
+
+        </div>
+
+      </div>
+      <div class="wrap-product-heading flex-center">
+        <div class="product">
+          <img src="./bizon/header_img/teSy7Wkqhy.svg" alt="lorem">
+
+          <h2>
+            Каталог добрив
+          </h2>
+          <h5>
+            У розробцi
+          </h5>
+          <div>
+            Роздiл буде вiдкрито найближчим часом
+          </div>
+          <p>
+            <a href="#" title="Lorem">Lorem</a>
+            <a href="#" title="ipsum"> ipsum</a>
+            <a href="#" title="sit"> sit</a>
+            <a href="#" title="dolor">dolor</a>
+            amet consectetur, adipisicing elit. Sed illum
+            <a href="#" title="voluptate">voluptate</a>.
+            Lorem, ipsum dolor.
+          </p>
+
+
+        </div>
+
+        <div class="product">
+          <img src="./bizon/header_img/2ivvXOP4JK.svg" alt="lorem">
+          <h2>
+            Каталог мiкро элементiв
+          </h2>
+          <h5>
+            Буде скоро
+          </h5>
+          <div>
+            Роздiл буде вiдкрито найближчим часом
+          </div>
+          <p>
+            <a href="#" title="Lorem">Lorem</a>
+            <a href="#" title="ipsum"> ipsum</a>
+            <a href="#" title="sit"> sit</a>
+            <a href="#" title="dolor">dolor</a>
+            amet consectetur, adipisicing elit. Sed illum
+            <a href="#" title="voluptate">voluptate</a>.
+            Lorem, ipsum dolor.
+          </p>
+
+
+        </div>
+
+      </div>
+
+      <div class="wrap-product-heading flex-center">
+        <div class="product-heading">
+          <h2>
+            Сільгосптехніка <br> від Бізон-Тех
+          </h2>
+          <div>
+            Продаж техніки та запасних частин від світових брендів
+          </div>
+
+        </div>
+        <div class="product-item">
+          <p>
+            Компанія Бізон-Тех з 2006 року успішно забезпечує сільгоспвиробників продукцією
+            найвищої якості. Широкий асортимент товару дозволяє задовольнити будь-які
+            вимоги виробника сільськогосподарськоі продукції нежалежно від масштабів
+            господарства.
+          </p>
+
+          <p>
+            Широка лінійка та різноманітність комплектацій дозволяють кожній одиниці техніки стати унікальною та
+            досягати максимальної продуктивності.
+          </p>
+        </div>
+
+
+      </div>
+      <div class="wrap-product-heading flex-center">
+        <div class="product">
+          <img src="./bizon/header_img/EMGtnbbor7.svg" alt="lorem">
+          <h2>
+            Каталог технiки
+          </h2>
+          <h5>
+            бiльш 30
+          </h5>
+          <div>
+            Всi Трактори вкрав Лукашенко
+          </div>
+          <p>
+            <a href="#" title="Lorem">Lorem</a>
+            <a href="#" title="ipsum"> ipsum</a>
+            <a href="#" title="sit"> sit</a>
+            <a href="#" title="dolor">dolor</a>
+            amet consectetur, adipisicing elit. Sed illum
+            <a href="#" title="voluptate">voluptate</a>.
+            Lorem, ipsum dolor.
+          </p>
+
+
+        </div>
+
+        <div class="product">
+          <img src="./bizon/header_img/IEW2mfzt6M.svg" alt="lorem">
+          <h2>
+            Запчастини
+          </h2>
+          <h5>
+            3000
+          </h5>
+          <div>
+            всi вивезинi с заводу
+          </div>
+          <p>
+            <a href="#" title="Lorem">Lorem</a>
+            <a href="#" title="ipsum"> ipsum</a>
+            <a href="#" title="sit"> sit</a>
+            <a href="#" title="dolor">dolor</a>
+            amet consectetur, adipisicing elit. Sed illum
+            <a href="#" title="voluptate">voluptate</a>.
+            Lorem, ipsum dolor.
+          </p>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="bizon-main">
+    <div class="bizon-main-conteiner">
+      <div class="bizon-container-zoom">
+        <div class="bizon-container-zoom-text">
+          <h2 class="bizon-container-zoom-text-h2 bizon-padding color-text-white">Про компанію</h2>
+          <p>Про компанію Бізон-Тех – компанія з багаторічним досвідом роботи на аграрному ринку України. Входить до
+            ТОП-3 найбільших
+            дистриб'юторів насіння, добрив та засобів захисту рослин. Компанія є офіційним дилером сільськогосподарської
+            техніки і
+            запасних частин брендів Massey Ferguson та Amazone. Комерційний успіх, довіра покупців і репутація надійного
+            партнера – наші
+            цінні досягнення.</p>
+          <div class="bizon-padding">
+            <a href="https://bizontech.ua/about" class="bizon-container-zoom-text-div-a">Детальніше ></a>
+          </div>
+        </div>
+        <div class="bizon-container-zoom-img">
+          <img src="./bizon/img-bizon/bizon.png" class="bizon-img">
+        </div>
+      </div>
+      <!-- секция 2 -->
+      <div class="bizon-container-square">
+        <div class="bizon-container-square-div">
+          <div class="bizon-square">
+            <p>ТОП-3</p>
+          </div>
+          <div class="bizon-container-square-text">На ринку дистриб`юції</div>
+        </div>
+        <div class="bizon-container-square-div">
+          <div class="bizon-square">
+            <p class="bizon-square-text">13+</p>
+          </div>
+          <div class="bizon-container-square-text">Успішних років роботи на ринку</div>
+        </div>
+        <div class="bizon-container-square-div">
+          <div class="bizon-square">
+            <p class="bizon-square-text">24</p>
+          </div>
+          <div class="bizon-container-square-text">Підрозділи по всій Україні</div>
+        </div>
+        <div class="bizon-container-square-div">
+          <div class="bizon-square">
+            <p>5000+</p>
+          </div>
+          <div class="bizon-container-square-text">Задоволених клієнтів</div>
+        </div>
+      </div>
+      <!--  секция 3 -->
+      <div>
+        <h4 class="bizon-container-zoom-text-h2 bizon-padding color-text-white">Напрями діяльності</h4>
+      </div>
+      <div class="bizon-container3">
+        <div class="bizon-background-image bizon-container3-block">
+          <img src="./bizon/img-bizon/bizon-block3.jpeg" class="img-background">
+          <img src="./bizon/img-bizon/small-picture.jpg">
+          <h6 class="bizon-square-text color-text-white">Насіння</h6>
+          <p class="bizon-container-zoom-text">Наше насіннєве портфоліо складається із зернових, олійних та інших
+            культур.</p>
+          <a href="https://bizontech.ua/shop/seeds" class="bizon-container-zoom-text-div-a display">Детальніше ></a>
+        </div>
+        <div class="bizon-background-image bizon-container3-block">
+          <img src="./bizon/img-bizon/bizon2-block3.jpeg" class="img-background">
+          <img src="./bizon/img-bizon/small-picture1.jpg">
+          <h6 class="bizon-square-text color-text-white">ЗЗР</h6>
+          <p class="bizon-container-zoom-text">Широкий асортимент товару дозволяє закрити системи захисту будь-яких
+            культур.</p>
+          <a href="https://bizontech.ua/shop" class="bizon-container-zoom-text-div-a display">Детальніше ></a>
+        </div>
+        <div class="bizon-background-image bizon-container3-block">
+          <img src="./bizon/img-bizon/bizon3-block3.jpeg" class="img-background">
+          <img src="./bizon/img-bizon/small-picture2.jpg">
+          <h6 class="bizon-square-text color-text-white">Добрива</h6>
+          <p class="bizon-container-zoom-text">У нас є всі необхідні препарати для забезпечення ефективної системи
+            живлення.</p>
+          <a href="https://bizontech.ua/shop" class="bizon-container-zoom-text-div-a display">Детальніше ></a>
+        </div>
+        <div class="bizon-background-image bizon-container3-block">
+          <img src="./bizon/img-bizon/bizon4-block3.jpeg" class="img-background">
+          <img src="./bizon/img-bizon/small-picture3.jpg">
+          <h6 class="bizon-square-text color-text-white">Техніка</h6>
+          <p class="bizon-container-zoom-text">Портфоліо техніки представлене відомими брендами – Massey Ferguson та
+            Amazone.</p>
+          <a href="https://bizontech.ua/technics" class="bizon-container-zoom-text-div-a display">Детальніше ></a>
+        </div>
+        <div class="bizon-background-image bizon-container3-block">
+          <img src="./bizon/img-bizon/bizon5-block3.jpeg" class="img-background">
+          <img src="./bizon/img-bizon/small-picture4.jpg">
+          <h6 class="bizon-square-text color-text-white">Запчастини</h6>
+          <p class="bizon-container-zoom-text">
+            Пропонуємо запчастини та витратні матеріали для с/г техніки світових брендів.
+          </p>
+          <a href="https://bizontech.ua/technics/repair-parts"
+            class="bizon-container-zoom-text-div-a display">Детальніше ></a>
+        </div>
+        <div class="bizon-background-image bizon-container3-block">
+          <img src="./bizon/img-bizon/bizon6-block3.jpeg" class="img-background">
+          <img src="./bizon/img-bizon/small-picture5.jpg">
+          <h6 class="bizon-square-text color-text-white">Сервісне обслуговування</h6>
+          <p class="bizon-container-zoom-text">
+            Проводимо якісне сервісне обслуговування та діагностику будь-якої с/г техніки.
+          </p>
+          <a href="https://bizontech.ua/technics/repair-parts"
+            class="bizon-container-zoom-text-div-a display">Детальніше ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-conteiner black-font">
+    <div class="conteiner flex-center services">
+
+      <div class="sectin-head">
+        <h2>
+          Послуги
+        </h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, deserunt
+          veniam. Suscipit quidem laudantium impedit est accusantium? Necessitatibus explicabo
+          blanditiis tempora doloremque.
+        </p>
+      </div>
+      <div class='servis-items flex-center'>
+        <div class="wrap-servis-items">
+          <a href="/services/agro-online" target="_self">
+            <div>
+              <h3>
+                АгроOnline >
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsum ad modi!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, maiores.
+              </p>
+
+            </div>
+          </a>
+
+        </div>
+        <div class="wrap-servis-items">
+          <a href="/services/meteo-farm" target="_self">
+            <div>
+              <h3>
+                Метео Фарм >
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsum ad modi!
+                Lorem ipsum
+              </p>
+
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="news-slider flex-center">
+        <input type="radio" name="slider2" id="radio1">
+        <input type="radio" name="slider2" id="radio2">
+        <input type="radio" name="slider2" id="radio3">
+        <input type="radio" name="slider2" id="radio4" checked>
+        
+        <div class='slider-display'>
+          <h2>
+            Блог
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet
+          </p>
+
+          <div class="slider-buttons flex-center">
+            <div class="flex-center"> &lt; </div>
+            <div class="flex-center"> &gt; </div>
+            <label class="radio1" for="radio1"></label>
+            <label class="radio2" for="radio2"></label>
+            <label class="radio3" for="radio3"></label>
+            <label class="radio4" for="radio4"></label>
+          </div>
+
+          <a href="https://bizontech.ua/blog">
+            <div class="flex-center">
+              Всі публікації
+            </div>
+          </a>
+
+
+        </div>
+
+       
+
+        <div class='slider-item'>
+          <div class="slider-bar-wrap">
+            <div class="slider-bar flex-center">
+              <div class="item">
+                <img src="./bizon/slider/slider1.jpeg" alt="новость 1" title="Новость 1">
+                <h5>З Днем Незалежності України</h5>
+                <p>
+                  <button>Вiтання</button>
+
+                  21 серпня, 2020
+                </p>
+              </div>
+              <div class="item">
+                <img src="./bizon/slider/slider2.jpeg" alt="новость 2" title="Новость 2">
+                <h5>Топ-5 кращих засобів від бур’янів </h5>
+                <p>
+                  <button>Огляди ЗЗР</button>
+
+                  25 травня, 2020
+                </p>
+              </div>
+              <div class="item">
+                <img src="./bizon/slider/slider3.jpeg" alt="новость 3" title="Новость 3">
+                <h5>Технологія вирощування кукурудзи на зерно</h5>
+                <p>
+                  <button>Поради</button>
+
+                  25 травня, 2020
+                </p>
+              </div>
+              <div class="item">
+                <img src="./bizon/slider/slider4.jpeg" alt="новость 4" title="Новость 4">
+                <h5>Бізон-Тех вітає з Великоднем!</h5>
+                <p>
+                  <button>Вiтання</button>
+
+                  17 квiтня, 2020
+                </p>
+              </div>
+              <div class="item">
+                <img src="./bizon/slider/slider5.jpeg" alt="новость 5" title="Новость 5">
+                <h5>Зі святом Весни</h5>
+                <p>
+                  <button>Вiтання</button>
+
+                  5 березня, 2020
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="black-font">
+    <div class="conteiner">
+      <div class="flex-center menu-footer">
+        <div class="menu-logo">
+          <div>
+            <img src="./bizon/slider/logo.svg" alt="bizon logo" width="auto" height="45px">
+          </div>
+  
+        </div>
+  
+        <div class="menu-content flex-center">
+          <div>Гаряча лінія</div>
+          <div> Дистриб'юція </div>
+          <div> Сільгосптехніка </div>
+          <div> Історія Бізон-Тех </div>
+          <div> Контакти </div>
+        </div>
+        <div class="wrap-social flex-center">
+          <a href="https://www.facebook.com/">
+            <div class="social-networks flex-center">
+              <img src="./bizon/slider/fb.png" alt="facebook" width="25px" height="auto">
+            </div>
+          </a>
+          
+          <a href="https://www.youtube.com/">
+            <div class="social-networks flex-center">
+              <img src="./bizon/slider/youtube.png" alt="facebook" width='auto' height="25px">
+            </div>
+          </a>
+          
+          <a href="https://www.instagram.com/">
+            <div class="social-networks flex-center">
+              <img src="./bizon/slider/inst.png" alt="facebook" width='auto' height="50px">
+            </div>
+          </a>
+          
+        </div>
+        
+        
+    </div>
+  </footer>
+  
+</body>
+
+</html>

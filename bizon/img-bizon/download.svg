@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="56px" viewBox="0 0 36 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Source icons / 64px / ic-grain-64px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="(S6)-[page]-1.-Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="001-00-00-00-00-Home" transform="translate(-189.000000, -4256.000000)">
+            <g id="company" transform="translate(0.000000, 3110.000000)">
+                <g id="directions" transform="translate(135.000000, 958.000000)">
+                    <g id="Group-6" transform="translate(0.000000, 144.000000)">
+                        <g id="grain">
+                            <g id="Source-icons-/-64px-/-ic-grain-64px" transform="translate(40.000000, 40.000000)">
+                                <rect id="container" x="0" y="0" width="64" height="64"></rect>
+                                <path d="M34.1950011,8 L37.9954955,47.9051909 L36.0045045,48.0948091 L32.1859513,8 L31.8140487,8 L27.9954955,48.0948091 L26.0045045,47.9051909 L29.8049989,8 L29.0903876,8 L18.3769725,49.0680913 L23.9224994,56 L40.0775006,56 L45.6230275,49.0680913 L34.9096124,8 L34.1950011,8 Z M26,4 L38,4 L50,50 L42,60 L22,60 L14,50 L26,4 Z" id="Shape" fill="#FFCE00" fill-rule="evenodd"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

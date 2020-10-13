@@ -1,0 +1,722 @@
+
+body{
+  background: linear-gradient(to bottom, black 10% ,  white 11%,  white 100%);
+}
+.header {
+  flex-direction: column;
+  position: relative;
+}
+.menu-header-conteiner{
+  position: sticky;
+  top: -1px;
+  margin: 10px 0px;
+  height: 56px;
+  width: 100%;
+  padding: 0 24px;
+  background: black;
+  z-index: 10;
+}
+.menu-header,
+.menu-footer{
+  justify-content: flex-start;
+}
+.menu-logo{
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  padding-right: 20px;
+  width: auto;
+  height: 45px;
+  margin-top:7px;
+}
+.menu-content{
+  color:rgba(255,255,255,0.8);
+  font-size: 16px
+}
+.menu-content div{
+  margin-left: 25px;
+}
+.menu-content div:hover{
+  color:#fb0;
+}
+.menu-controlz{
+  margin-left: auto;
+  color:rgba(255,255,255,0.8);
+}
+.menu-controlz div{
+  margin-right: 10px;
+  cursor: pointer;
+}
+.lang{
+  font-size: 16px;
+  position: relative;
+  top: -3px;
+}
+.lang:hover{
+  text-decoration: underline;
+}
+.lang::after{
+  content: '';
+  position: absolute;
+  width: 0; height: 0;
+  top: 8px ; left: 25px;
+  border-top: 7px solid rgba(255,255,255,0.8);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.header input{
+  display: none;
+}
+.header .slider-wrap{
+  width: 100%;
+  overflow: hidden;
+  height: 500px;
+  position: relative;
+}
+.header .slider{
+  width: 2500px;
+  height: 100%;
+}
+.header .slider-img{
+  width: 1050px;
+  height: 100%;
+  position: absolute;
+  left:1070px;
+  bottom: 0;
+}
+.header .slider-img1,
+.header .slider-img2,
+.header .slider-img3,
+.header .slider-img4{
+  animation:  12s linear infinite;
+}
+.header .slider-items{
+  width: 100%;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.header .slider-nav{
+  width: 100px;
+  padding-bottom: 15px;
+}
+.header .slider-line{
+  height: 3px;
+  width: 0px;
+  background: #fb0;
+  margin-bottom: 12px;
+  animation: 12s linear infinite;
+}
+.header label.item1,
+.header label.item2,
+.header label.item3,
+.header label.item4{
+  position: relative;
+  z-index: 2;
+}
+.header label.cast-item{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  animation-delay: 3s;
+}
+.header label.item5{
+  right: 300px;
+}
+.header label.item6{
+  right: 200px;
+}
+.header label.item7{
+  right: 100px;
+}
+.header .offer{
+  width: 480px;
+  height: 180px;
+  background: black;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 320px;
+  box-sizing: border-box;
+  padding: 20px 20px 0 20px;
+}
+.header .wrap-slider-offer{
+  width: 440px;
+  position: relative;
+  overflow: hidden;
+  animation: 12s linear infinite;
+  animation-name: slider;
+}
+.header .offer-slaid{
+  height: 160px;
+  font-size: 30px ;
+  line-height: 28px ;
+  font-weight: 700;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 0; left: 0;
+  background: black;
+}
+.header .details{
+  margin-top: 50px;
+  width: 200px;
+  padding: 16px 24px 16px 24px;
+  background: #FFCE00;
+}
+.header .details:hover{
+  background: #ffdb4d;
+}
+.header .details pre{
+  font-family: "Roboto-Medium","Helvetica",sans-serif;
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+}
+.header .offer-slaid1,
+.header .offer-slaid2,
+.header .offer-slaid3,
+.header .offer-slaid4{
+  animation: 12s linear infinite;
+}
+.header input#slider1:checked ~ .offer .wrap-slider-offer{
+  animation-name: slider1;
+}
+.header input#slider2:checked ~ .offer .wrap-slider-offer{
+  animation-name: slider2;
+}
+.header input#slider3:checked ~ .offer .wrap-slider-offer{
+  animation-name: slider3;
+}
+.header input#slider4:checked ~ .offer .wrap-slider-offer{
+  animation-name: slider4;
+}
+.header input#slider5:checked ~ .offer .wrap-slider-offer,
+.header input#slider6:checked ~ .offer .wrap-slider-offer,
+.header input#slider7:checked ~ .offer .wrap-slider-offer,
+.header input#slider8:checked ~ .offer .wrap-slider-offer{
+  animation-name: slider;
+}
+.header input#slider1:checked ~ .offer .offer-slaid1,
+.header input#slider2:checked ~ .offer .offer-slaid2,
+.header input#slider3:checked ~ .offer .offer-slaid3,
+.header input#slider4:checked ~ .offer .offer-slaid4{
+  animation-name: slaid1;
+}
+.header input#slider1:checked ~ .offer .offer-slaid2,
+.header input#slider2:checked ~ .offer .offer-slaid3,
+.header input#slider3:checked ~ .offer .offer-slaid4,
+.header input#slider4:checked ~ .offer .offer-slaid1{
+  animation-name: slaid2;
+}
+.header input#slider1:checked ~ .offer .offer-slaid3,
+.header input#slider2:checked ~ .offer .offer-slaid4,
+.header input#slider3:checked ~ .offer .offer-slaid1,
+.header input#slider4:checked ~ .offer .offer-slaid2{
+  animation-name: slaid3;
+}
+.header input#slider1:checked ~ .offer .offer-slaid4,
+.header input#slider2:checked ~ .offer .offer-slaid1,
+.header input#slider3:checked ~ .offer .offer-slaid2,
+.header input#slider4:checked ~ .offer .offer-slaid3{
+  animation-name: slaid4;
+}
+.header input#slider5:checked ~ .offer .offer-slaid1,
+.header input#slider6:checked ~ .offer .offer-slaid2,
+.header input#slider7:checked ~ .offer .offer-slaid3,
+.header input#slider8:checked ~ .offer .offer-slaid4{
+  animation-name: slaid01;
+}
+.header input#slider5:checked ~ .offer .offer-slaid2,
+.header input#slider6:checked ~ .offer .offer-slaid3,
+.header input#slider7:checked ~ .offer .offer-slaid4,
+.header input#slider8:checked ~ .offer .offer-slaid1{
+  animation-name:  slaid02;
+}
+.header input#slider5:checked ~ .offer .offer-slaid3,
+.header input#slider6:checked ~ .offer .offer-slaid4,
+.header input#slider7:checked ~ .offer .offer-slaid1,
+.header input#slider8:checked ~ .offer .offer-slaid2{
+  animation-name:  slaid03;
+}
+.header input#slider5:checked ~ .offer .offer-slaid4,
+.header input#slider6:checked ~ .offer .offer-slaid1,
+.header input#slider7:checked ~ .offer .offer-slaid2,
+.header input#slider8:checked ~ .offer .offer-slaid3{
+  animation-name:  slaid04;
+}
+.header input#slider1:checked ~ .slider-items label.item1,
+.header input#slider2:checked ~ .slider-items label.item2,
+.header input#slider3:checked ~ .slider-items label.item3,
+.header input#slider4:checked ~ .slider-items label.item4{
+  z-index: 0;
+}
+.header input#slider1:checked ~ .slider-items label.item1 .animation1,
+.header input#slider2:checked ~ .slider-items label.item2 .animation2,
+.header input#slider3:checked ~ .slider-items label.item3 .animation3,
+.header input#slider4:checked ~ .slider-items label.item4 .animation4 {
+  animation-name: animation01;
+}
+.header input#slider1:checked ~ .slider-items label.item2 .animation2,
+.header input#slider2:checked ~ .slider-items label.item3 .animation3,
+.header input#slider3:checked ~ .slider-items label.item4 .animation4,
+.header input#slider4:checked ~ .slider-items label.item1 .animation1{
+  animation-name: animation02;
+}
+.header input#slider1:checked ~ .slider-items label.item3 .animation3,
+.header input#slider2:checked ~ .slider-items label.item4 .animation4,
+.header input#slider3:checked ~ .slider-items label.item1 .animation1,
+.header input#slider4:checked ~ .slider-items label.item2 .animation2{
+  animation-name: animation03;
+}
+.header input#slider1:checked ~ .slider-items label.item4 .animation4,
+.header input#slider2:checked ~ .slider-items label.item1 .animation1,
+.header input#slider3:checked ~ .slider-items label.item2 .animation2,
+.header input#slider4:checked ~ .slider-items label.item3 .animation3{
+  animation-name: animation04;
+}
+.header input#slider5:checked ~ .slider-items label.item1 .animation1,
+.header input#slider6:checked ~ .slider-items label.item2 .animation2,
+.header input#slider7:checked ~ .slider-items label.item3 .animation3,
+.header input#slider8:checked ~ .slider-items label.item4 .animation4 {
+  animation-name: animation1;
+}
+.header input#slider5:checked ~ .slider-items label.item2 .animation2,
+.header input#slider6:checked ~ .slider-items label.item3 .animation3,
+.header input#slider7:checked ~ .slider-items label.item4 .animation4,
+.header input#slider8:checked ~ .slider-items label.item1 .animation1{
+  animation-name: animation2;
+}
+.header input#slider5:checked ~ .slider-items label.item3 .animation3,
+.header input#slider6:checked ~ .slider-items label.item4 .animation4,
+.header input#slider7:checked ~ .slider-items label.item1 .animation1,
+.header input#slider8:checked ~ .slider-items label.item2 .animation2{
+  animation-name: animation3;
+}
+.header input#slider5:checked ~ .slider-items label.item4 .animation4,
+.header input#slider6:checked ~ .slider-items label.item1 .animation1,
+.header input#slider7:checked ~ .slider-items label.item2 .animation2,
+.header input#slider8:checked ~ .slider-items label.item3 .animation3{
+  animation-name: animation4;
+}
+.header input#slider2:checked ~ .slider-items label .item2 .slider-line {
+  width: 100%;
+}
+/* image  */
+.header input#slider1:checked ~ .slider-wrap .slider .slider-img1{
+  animation-name: img1;
+}
+.header input#slider1:checked ~ .slider-wrap .slider .slider-img2{
+  animation-name: img2;
+}
+.header input#slider1:checked ~ .slider-wrap .slider .slider-img3{
+  animation-name: img3;
+}
+.header input#slider1:checked ~ .slider-wrap .slider .slider-img4{
+  animation-name: img4;
+}
+.header input#slider1:checked ~ .slider-wrap .slider .slider-img1,
+.header input#slider2:checked ~ .slider-wrap .slider .slider-img2,
+.header input#slider3:checked ~ .slider-wrap .slider .slider-img3,
+.header input#slider4:checked ~ .slider-wrap .slider .slider-img4 {
+  animation-name: img1;
+}
+.header input#slider1:checked ~ .slider-wrap .slider .slider-img2,
+.header input#slider2:checked ~ .slider-wrap .slider .slider-img3,
+.header input#slider3:checked ~ .slider-wrap .slider .slider-img4,
+.header input#slider4:checked ~ .slider-wrap .slider .slider-img1{
+  animation-name: img2;
+}
+.header input#slider1:checked ~ .slider-wrap .slider .slider-img3,
+.header input#slider2:checked ~ .slider-wrap .slider .slider-img4,
+.header input#slider3:checked ~ .slider-wrap .slider .slider-img1,
+.header input#slider4:checked ~ .slider-wrap .slider .slider-img2{
+  animation-name: img3;
+}
+.header input#slider1:checked ~ .slider-wrap .slider .slider-img4,
+.header input#slider2:checked ~ .slider-wrap .slider .slider-img1,
+.header input#slider3:checked ~ .slider-wrap .slider .slider-img2,
+.header input#slider4:checked ~ .slider-wrap .slider .slider-img3{
+  animation-name: img4;
+}
+.header input#slider5:checked ~ .slider-wrap .slider .slider-img1,
+.header input#slider6:checked ~ .slider-wrap .slider .slider-img2,
+.header input#slider7:checked ~ .slider-wrap .slider .slider-img3,
+.header input#slider8:checked ~ .slider-wrap .slider .slider-img4 {
+  animation-name: img01;
+}
+.header input#slider5:checked ~ .slider-wrap .slider .slider-img2,
+.header input#slider6:checked ~ .slider-wrap .slider .slider-img3,
+.header input#slider7:checked ~ .slider-wrap .slider .slider-img4,
+.header input#slider8:checked ~ .slider-wrap .slider .slider-img1{
+  animation-name: img02;
+}
+.header input#slider5:checked ~ .slider-wrap .slider .slider-img3,
+.header input#slider6:checked ~ .slider-wrap .slider .slider-img4,
+.header input#slider7:checked ~ .slider-wrap .slider .slider-img1,
+.header input#slider8:checked ~ .slider-wrap .slider .slider-img2{
+  animation-name: img03;
+}
+.header input#slider5:checked ~ .slider-wrap .slider .slider-img4,
+.header input#slider6:checked ~ .slider-wrap .slider .slider-img1,
+.header input#slider7:checked ~ .slider-wrap .slider .slider-img2,
+.header input#slider8:checked ~ .slider-wrap .slider .slider-img3{
+  animation-name: img04;
+}
+@keyframes animation1{
+  0%{
+    width: 0px;
+  }
+  25%{
+    width: 100%;
+  }
+  26%,100%{
+    width: 0px;
+  }
+}
+@keyframes   animation2{
+  0%,25%,51%,100%{
+    width: 0px;
+  }
+  50%{
+    width: 100%;
+  }  
+}
+@keyframes   animation3{
+  0%,50%,76%,100%{
+    width: 0px;
+  }
+  75%{
+    width: 100%;
+  }  
+}
+@keyframes   animation4{
+  75%{
+    width: 0px;
+  }
+  100%{
+    width: 100%;
+  }  
+}
+@keyframes animation01{
+  0%{
+    width: 0px;
+  }
+  25%{
+    width: 100%;
+  }
+  26%,100%{
+    width: 0px;
+  }
+}
+@keyframes   animation02{
+  0%,25%,51%,100%{
+    width: 0px;
+  }
+  50%{
+    width: 100%;
+  }  
+}
+@keyframes   animation03{
+  0%,50%,76%,100%{
+    width: 0px;
+  }
+  75%{
+    width: 100%;
+  }  
+}
+@keyframes   animation04{
+  75%{
+    width: 0px;
+  }
+  100%{
+    width: 100%;
+  }  
+}
+/* image */
+@keyframes   img1{
+  0%{
+    z-index: 4;
+  }
+  7%,25%{
+    left:0;
+    width: 1050px;
+    height: 100%;
+    opacity: 1;
+    
+  }
+  30%{
+    width: 1000px;
+    height: 90%;
+    opacity: 0;
+    z-index: 1;
+  }
+  74%{
+    left:1070px;
+    opacity: 0;
+    width: 1050px;
+    height: 100%;
+  }
+  75%,100%{
+    opacity: 1;
+    left: 1070px;
+    width: 1050px;
+    height: 100%;
+  }
+}
+@keyframes   img2{
+  0%{
+    z-index: 3;
+  }
+  25%{
+    left:1070px;
+    z-index: 3;
+  }
+  32%,50%{
+    left:0;
+    width: 1050px;
+    height: 100%;
+    opacity: 1;
+  }
+  55%{
+    width: 1000px;
+    height: 90%;
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes   img3{
+  0%{
+    z-index: 2;
+  }
+  50%{
+    left:1070px;
+  }
+  57%,75%{
+    left:0;
+    width: 1050px;
+    height: 100%;
+    opacity: 1;
+  }
+  80%{
+    width: 1000px;
+    height: 90%;
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes   img4{
+  0%{
+    z-index: 1;
+  }
+  75%{
+    left:1070px;
+  }
+  82%,100%{
+    left:0;
+    width: 1050px;
+    height: 100%;
+    opacity: 1;
+  }
+ 
+}
+@keyframes   img01{
+  0%{
+    z-index: 4;
+  }
+  7%,25%{
+    left:0;
+    width: 1050px;
+    height: 100%;
+    opacity: 1;
+    
+  }
+  30%{
+    width: 1000px;
+    height: 90%;
+    opacity: 0;
+    z-index: 1;
+  }
+  74%{
+    left:1070px;
+    opacity: 0;
+    width: 1050px;
+    height: 100%;
+  }
+  75%,100%{
+    opacity: 1;
+    left: 1070px;
+    width: 1050px;
+    height: 100%;
+  }
+}
+@keyframes   img02{
+  0%{
+    z-index: 3;
+  }
+  25%{
+    left:1070px;
+    z-index: 3;
+  }
+  32%,50%{
+    left:0;
+    width: 1050px;
+    height: 100%;
+    opacity: 1;
+  }
+  55%{
+    width: 1000px;
+    height: 90%;
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes   img03{
+  0%{
+    z-index: 2;
+  }
+  50%{
+    left:1070px;
+  }
+  57%,75%{
+    left:0;
+    width: 1050px;
+    height: 100%;
+    opacity: 1;
+  }
+  80%{
+    width: 1000px;
+    height: 90%;
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes   img04{
+  0%{
+    z-index: 1;
+  }
+  75%{
+    left:1070px;
+  }
+  82%,100%{
+    left:0;
+    width: 1050px;
+    height: 100%;
+    opacity: 1;
+  }
+ 
+}
+/* slider  */
+@keyframes   slider{
+  5%,30%,55%,80%{
+    height: 0px;
+  }
+  0%,10%,25%,35%,50%,60%,75%,85%,100%{
+    height: 160px;
+  }
+}
+@keyframes   slider2{
+  5%,30%,55%,80%{
+    height: 0px;
+  }
+  0%,10%,25%,35%,50%,60%,75%,85%,100%{
+    height: 160px;
+  }
+}
+@keyframes   slider3{
+  5%,30%,55%,80%{
+    height: 0px;
+  }
+  0%,10%,25%,35%,50%,60%,75%,85%,100%{
+    height: 160px;
+  }
+} 
+@keyframes   slider4{
+  5%,30%,55%,80%{
+    height: 0px;
+  }
+  0%,10%,25%,35%,50%,60%,75%,85%,100%{
+    height: 160px;
+  }
+} 
+@keyframes   slider1{
+  5%,30%,55%,80%{
+    height: 0px;
+  }
+  0%,10%,25%,35%,50%,60%,75%,85%,100%{
+    height: 160px;
+  }
+} 
+@keyframes slaid1{
+  5%,29%{
+    z-index: 5;
+  }
+  0%, 4.9%,30%,100%{
+    z-index: 0;
+  }
+} 
+@keyframes   slaid2{
+  0%,29%,55%,100%{
+    z-index: 0;
+  }
+  30%, 54%{
+    z-index: 5;
+  }  
+}
+@keyframes   slaid3{
+  0%,54%,80%,100%{
+    z-index: 0;
+  }
+  55%, 79%{
+    z-index: 5;
+  }  
+}
+@keyframes   slaid4{
+  5%, 79%{
+    z-index: 0;
+  }
+  0%, 4%, 80%, 100%{
+    z-index: 5;
+  }  
+}
+@keyframes slaid01{
+  5%,29%{
+    z-index: 5;
+  }
+  0%, 4.9%,30%,100%{
+    z-index: 0;
+  }
+} 
+@keyframes   slaid02{
+  0%,29%,55%,100%{
+    z-index: 0;
+  }
+  30%, 54%{
+    z-index: 5;
+  }  
+}
+@keyframes   slaid03{
+  0%,54%,80%,100%{
+    z-index: 0;
+  }
+  55%, 79.9%{
+    z-index: 5;
+  }  
+}
+@keyframes   slaid04{
+  5%, 79%{
+    z-index: 0;
+  }
+  0%, 4%, 80%, 100%{
+    z-index: 5;
+  }  
+}

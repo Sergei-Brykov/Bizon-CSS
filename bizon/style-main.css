@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "HeliosExt-Bold";
+  src: url("/bundle/fonts/HeliosExt-Bold.eot");
+  src: url("/bundle/fonts/HeliosExt-Bold.eot?#iefix") format("embedded-opentype"),url("/bundle/fonts/HeliosExt-Bold.woff2") format("woff2"),url("/bundle/fonts/HeliosExt-Bold.woff") format("woff"),url("/bundle/fonts/HeliosExt-Bold.ttf") format("truetype"),url("/bundle/fonts/HeliosExt-Bold.svg#") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/bundle/fonts/Roboto-Regular.eot");
+  src: url("/bundle/fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),url("/bundle/fonts/Roboto-Regular.woff2") format("woff2"),url("/bundle/fonts/Roboto-Regular.woff") format("woff"),url("/bundle/fonts/Roboto-Regular.ttf") format("truetype"),url("/bundle/fonts/Roboto-Regular.svg#") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("/bundle/fonts/Roboto-Medium.eot");
+  src: url("/bundle/fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"),url("/bundle/fonts/Roboto-Medium.woff2") format("woff2"),url("/bundle/fonts/Roboto-Medium.woff") format("woff"),url("/bundle/fonts/Roboto-Medium.ttf") format("truetype"),url("/bundle/fonts/Roboto-Medium.svg#") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/bundle/fonts/Roboto-Bold.eot");
+  src: url("/bundle/fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),url("/bundle/fonts/Roboto-Bold.woff2") format("woff2"),url("/bundle/fonts/Roboto-Bold.woff") format("woff"),url("/bundle/fonts/Roboto-Bold.ttf") format("truetype"),url("/bundle/fonts/Roboto-Bold.svg#") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap
+}
+@font-face {
+  font-family: "Bizon-Tech-Icon-Font";
+  src: url("/bundle/fonts/Bizon-Tech-Icon-Font.eot");
+  src: url("/bundle/fonts/Bizon-Tech-Icon-Font.eot?#iefix") format("embedded-opentype"),url("/bundle/fonts/Bizon-Tech-Icon-Font.woff2") format("woff2"),url("/bundle/fonts/Bizon-Tech-Icon-Font.woff") format("woff"),url("/bundle/fonts/Bizon-Tech-Icon-Font.ttf") format("truetype"),url("/bundle/fonts/Bizon-Tech-Icon-Font.svg#") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap
+}
+*{
+  font: 16px/24px "Roboto-Regular","Helvetica",sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #FFFFFF99;
+  outline: none;
+}
+.black-conteiner{
+  width: 100%;
+  background: #000; 
+}
+.conteiner{
+  width: 1100px;
+  margin: auto;
+  /* тень можно убрать или поставить другой свет */
+  
+}
+.font-white *{
+  color: white;
+}
+.flex-center{
+  /* Юзать для всех флексов - при необходимости перезаписывая свойства
+  следите чтобы селектор перебивался - юзайте гугл Дедпулс */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pointer{
+  /* юзать для кнопок */
+  cursor: pointer;
+}
+.white-conteiner{
+  width: 100%;
+  background: #f1f3f7; 
+}
+.black-font *{
+  color: #000;
+}
